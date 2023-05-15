@@ -1,0 +1,143 @@
+<html>
+<head>
+	<title>Time Converter</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="sw2.js"></script>
+	<link rel="stylesheet" href="sw2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<center>
+	<body>
+    <div class="row">
+       <div class="col-xl-12"><h1>Time Converter</h1></div>
+	</div>
+	<br>
+	<div class="row">
+	   <div class="col-xl-12"><h3>Minutes</h3></div>
+	</div>
+	<div class="row">
+       <div class="col-xl-4">Minutes to Seconds</div>
+       <div class="col-xl-4">Minutes to Hours</div>
+       <div class="col-xl-4">Minutes to Days</div>
+    </div>
+	<div class="row">
+       <div class="col-xl-4">
+       	  <input type="text" id="min_sec" placeholder="Enter mins">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="text" id="min_hr" placeholder="Enter mins">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="text" id="min_day" placeholder="Enter mins">
+       </div>
+    </div>
+    <div class="row">
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit mins" onclick="minsTosecs()">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit mins" onclick="minsTohrs()">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit mins" onclick="minsTodays()">
+       </div>
+    </div>
+    <br><br>
+    <div class="row">
+	   <div class="col-xl-12"><h3>Seconds</h3></div>
+	</div>
+	<div class="row">
+       <div class="col-xl-4">Seconds to Minutes</div>
+       <div class="col-xl-4">Seconds to Hours</div>
+       <div class="col-xl-4">Seconds to Days</div>
+    </div>
+    <div class="row">
+       <div class="col-xl-4">
+       	  <input type="text" id="sec_min" placeholder="Enter secs">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="text" id="sec_hr" placeholder="Enter secs">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="text" id="sec_day" placeholder="Enter secs">
+       </div>
+    </div>
+    <div class="row">
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit secs" onclick="secsTomins()">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit secs" onclick="secsTohrs()">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit secs" onclick="secsTodays()">
+       </div>
+    </div>
+    <br><br>
+    <div class="row">
+	   <div class="col-xl-12"><h3>Hours</h3></div>
+	</div>
+	<div class="row">
+       <div class="col-xl-4">Hours to Seconds</div>
+       <div class="col-xl-4">Hours to Minutes</div>
+       <div class="col-xl-4">Hours to Days</div>
+    </div>
+    <div class="row">
+       <div class="col-xl-4">
+       	  <input type="text" id="hr_sec" placeholder="Enter hrs">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="text" id="hr_min" placeholder="Enter hrs">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="text" id="hr_day" placeholder="Enter hrs">
+       </div>
+    </div>
+    <div class="row">
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit hrs" onclick="hrsTosecs()">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit hrs" onclick="hrsTomins()">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit hrs" onclick="hrsTodays()">
+       </div>
+    </div>
+    <br><br>
+    <div class="row">
+	   <div class="col-xl-12"><h3>Days</h3></div>
+	</div>
+	<div class="row">
+       <div class="col-xl-4">Days to Seconds</div>
+       <div class="col-xl-4">Days to Minutes</div>
+       <div class="col-xl-4">Days to Hours</div>
+    </div>
+     <div class="row">
+       <div class="col-xl-4">
+       	  <input type="text" id="day_sec" placeholder="Enter days">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="text" id="day_min" placeholder="Enter days">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="text" id="day_hr" placeholder="Enter days">
+       </div>
+    </div>
+    <div class="row">
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit days" onclick="daysTosecs()">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit days" onclick="daysTomins()">
+       </div>
+       <div class="col-xl-4">
+       	  <input type="submit" value="Submit days" onclick="daysTohrs()">
+       </div>
+    </div>
+    </body>
+</center>
+</html>
